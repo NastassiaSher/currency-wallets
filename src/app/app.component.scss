@@ -1,0 +1,204 @@
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: white;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 16px;
+  color: white;
+  padding-left: 6px;
+}
+
+span {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent linear-gradient(0deg, #3F5C93 0%, #385B8B 34%, #071134 100%) 0% 0% no-repeat padding-box;
+}
+
+.logo {
+  img {
+    width: 180px;
+    height: auto;
+  }
+}
+
+.header {
+  color: #3AC9F0;
+  font-size: 14px;
+  text-transform: uppercase
+}
+
+.center-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 30%;
+    max-width: 480px;
+  }
+  .carousel-height {
+    height: 20vh;
+    max-height: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 40%;
+    min-width: 380px;
+  }
+  .carousel-height {
+    height: 15vh;
+    min-height: 170px ;
+  }
+}
+
+#rateBott, #rateTop {
+  color: #3BCAF0;
+  position: fixed;
+  right: 40px;
+}
+
+.background {
+  background: transparent linear-gradient(256deg, #238CD1 0%, #3BCAF0 100%) 0% 0% no-repeat padding-box;
+}
+
+.sides-padding {
+  height: 100%;
+  padding: 35px 40px 0 40px;
+}
+
+.wallet-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+}
+
+// inputs
+#bInput {
+  border: none;
+}
+
+.top-input{
+  width: 100px;
+  position: absolute;
+  z-index: 1000;
+  top: 25%;
+  right: 12%;
+}
+
+input {
+  padding-left: 20px;
+  margin-bottom: 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  border-bottom: 1px solid #3BCAF0;
+}
+
+// Removing arrows in input
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.i-label {
+  padding-left: 10px;
+}
+
+// divider
+.triangle{
+  width: 38px;
+  height: 17px;
+  background: white;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  position: absolute;
+  top:0;
+  left:calc(50% - 15px);
+  z-index: 1000;
+}
+.divider{
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+}
+// error message
+#error {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  color: #FCA6F5;
+  margin-top: 12px;
+}
+
+// buttons
+.btns {
+  margin-top: 25px;
+  font-size: 18px;
+}
+.center-btns {
+  flex-direction: column;
+}
+#exchangeBtn {
+  width: 150px;
+  height: 40px;
+  outline: none;
+  background: transparent;
+  color: white;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+}
+.btn-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.26;
+}
+#clearBtn {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-top: 20px;
+  color: #FFFFFF;
+  opacity: 0.36;
+}
+
+
+
